@@ -18,7 +18,7 @@ describe('Year model Test', () => {
   });
 
   it('month should have weeks',() => {
-    expect(new Month(new Year(2017).getMonthDays(3)).weeks.length).toBe(6);
+    expect(new Month(new Year(2017).getMonthDays(3), this.startingDay).weeks.length).toBe(6);
   });
 
 });

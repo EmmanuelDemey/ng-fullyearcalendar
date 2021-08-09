@@ -7,7 +7,7 @@ export class Year {
     year: number;
     months: Month[] = [];
 
-  constructor(y: number, private startingMonth: number) {
+  constructor(y: number, private startingMonth: number, private startingDay: number) {
         this.year = y;
         this._initYear();
     }
@@ -24,9 +24,7 @@ export class Year {
 
   private createMonth(i: number, year: number) {
     const days: Day[] = this.getMonthDays(i, year);
-    const month = new Month(days);
-    month.index = i;
-    month.days = days;
+    const month = new Month(i, this.startingDay, days);
     this.months.push(month);
   }
 
