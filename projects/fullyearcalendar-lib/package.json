@@ -1,6 +1,6 @@
 {
-  "name": "fullyearcalendar-lib",
-  "version": "1.0.4",
+  "name": "@emmanueldemey/fullyearcalendar-lib",
+  "version": "1.0.5",
   "description":"a full year calendar library for angular",
   "keywords" :["Angular","Library","Calendar"],
   "license" : "SEE LICENSE IN LICENSE",
@@ -8,5 +8,5 @@
     "@angular/common": ">=4.0.0",
     "@angular/core": ">=4.0.0"
   }
-  
+
 }
